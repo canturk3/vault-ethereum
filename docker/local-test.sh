@@ -2,7 +2,6 @@
 
 COMMAND=$1
 PWD="$(pwd)"
-GANACHE_DATA="$PWD/ganache_data"
 OPERATOR_JSON="$PWD/config/operator.json"
 OPERATOR_DATA="$PWD/config/data"
 OPERATOR_SECRETS=$(cat $OPERATOR_JSON)
@@ -12,8 +11,6 @@ export VAULT_ADDR=https://localhost:9200
 
 function clear() {
     echo "Clearing previous state..."
-    echo "rm -fr $GANACHE_DATA"
-    rm -fr $GANACHE_DATA
     echo "rm -fr $OPERATOR_DATA"
     rm -fr $OPERATOR_DATA
     echo "rm $OPERATOR_JSON"
