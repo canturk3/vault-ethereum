@@ -7,7 +7,7 @@ path = "/home/vault/config/data"
 }
 
 api_addr = "https://localhost:9200"
-ui = "false"
+ui = "true"
 
 plugin_directory = "/home/vault/plugins"
 listener "tcp" {
