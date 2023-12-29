@@ -9,6 +9,7 @@ services:
       - "9200:9200"
     volumes:
       - "./config:/home/vault/config:rw"
+    user: 0:0
     entrypoint: /home/vault/config/entrypoint.sh
 networks:
   develop:
