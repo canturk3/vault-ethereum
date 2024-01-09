@@ -1,5 +1,0 @@
-{
-  "script": "docker-compose",
-  "args": ["-f", "../docker/docker-compose.yml", "up", "--build", "--remove-orphans"],
-  "exec_mode": "fork"
-}
